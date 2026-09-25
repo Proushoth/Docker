@@ -37,3 +37,24 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+### References
+
+- https://www.docker.com/resources/what-container/
+- https://www.ibm.com/think/topics/container-registry
+- https://www.geeksforgeeks.org/devops/difference-between-docker-image-and-container/
+- https://www.geeksforgeeks.org/devops/what-is-docker-volume/
+- https://www.geeksforgeeks.org/devops/basics-of-docker-networking/
+- https://docs.docker.com/get-started/docker-concepts/building-images/understanding-image-layers/#image-layers
+- https://www.geeksforgeeks.org/devops/what-is-docker-registry/
+- https://www.geeksforgeeks.org/devops/what-is-docker-image-layer/
