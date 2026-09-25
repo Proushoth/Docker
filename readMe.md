@@ -1,6 +1,6 @@
 ### Core concept of docker
 
-1.What is a container and how it is different from virtual machine?
+1. What is a container and how it is different from virtual machine?
 
 - Container is and isolated enviorment for running application, it is much lighweight than a virtual machine.
 
@@ -24,5 +24,13 @@
 - ***Network***: It is a way to connect containers to each other and to the host machine. It is a way to isolate containers from each other.
 
 3. What is a registry?
+
+- A registry is where you can push and pull images. It allows to share across teams. 
+
+- Docker hub is a cloud platform to store and share images. It is a public registry.
+
+- It acts as a server-side application that stores, manages, and distributes container images across environments.
+
+
 
 
