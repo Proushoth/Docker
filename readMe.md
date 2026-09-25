@@ -31,6 +31,9 @@
 
 - It acts as a server-side application that stores, manages, and distributes container images across environments.
 
+4. Image layers and why layer order in a Dockerfile matters for build caching
+
+- Every time a new instruction is added to the image docker creates a new layer on top of the previous layer and stores them in a cache. Once these layers are created, they are cached and can be reused for future builds. So the order of instructions in a Dockerfile matters for build caching. This makes the build process much faster.
 
 
 
