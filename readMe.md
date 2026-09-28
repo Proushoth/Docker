@@ -35,6 +35,16 @@
 
 - Every time a new instruction is added to the image docker creates a new layer on top of the previous layer and stores them in a cache. Once these layers are created, they are cached and can be reused for future builds. So the order of instructions in a Dockerfile matters for build caching. This makes the build process much faster.
 
+### Docker CLI basics
+
+- ***Docker run*** - Pulls the image and that is needed to run the container
+- ***docker ps*** - Shows what are the running containers 
+- ***docker ps -a*** - Check everything, including stopped containers
+- ***docker stop my_container*** - Stops and exits the contianer
+- ***docker start*** - Starts the container
+- ***docker logs*** - Allows user to view logs 
+- ***docker rm*** -  removes the container 
+- ***docker exec*** -  Goes into a running container 
 
 
 
