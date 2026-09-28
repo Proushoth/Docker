@@ -74,10 +74,21 @@
 
 ## 4. Docker compose 
 
+- ***docker-compose.yaml*** - Compose simplifies the control of your entire application. It manages services, network, and volumes in a single file. With a single command it create and starts all the services from the config file.
 
+- ***depends on*** - It helps user to control start and stop of the service. Compose garantees dependence services are started before starting the dependent services.
 
+- ***docker compose up -d --build*** - rebuild and restart changed services
 
+- ***docker compose build***  - rebuild images without starting
 
+- ***docker compose restart app***  - restart just one service
+
+- ***docker compose stop***  - stop without removing containers
+
+- ***docker compose down***  - remove containers + network (keeps volumes)
+
+- ***docker compose down -v***  - remove containers + network + volumes
 
 
 
@@ -106,3 +117,7 @@
 - https://docs.docker.com/get-started/tutorials/run-an-app/
 - https://www.geeksforgeeks.org/devops/what-is-entrypoint-in-dockerfile/
 - https://www.docker.com/blog/docker-best-practices-choosing-between-run-cmd-and-entrypoint/
+- https://docs.docker.com/compose/
+- https://docs.docker.com/reference/compose-file/services/#depends_on
+- https://docs.docker.com/compose/how-tos/startup-order/
+- 
