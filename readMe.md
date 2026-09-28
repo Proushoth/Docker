@@ -45,6 +45,29 @@
 - ***docker logs*** - Allows user to view logs 
 - ***docker rm*** -  removes the container 
 - ***docker exec*** -  Goes into a running container 
+- ***docker image*** - Shows the list of images in the local machine 
+- ***docker pull*** - Pulls image
+- ***docker rmi*** - Removes an image 
+- ***docker system purne*** - Removes all stopped containers, all networks not used by at least one container, all dangling images (untagged layers), and all dangling build cache. It does not touch volumes or running containers.
+
+## Port mapping 
+
+- ***docker -p 8080.80*** - reates a mapping between port 8080 on any address on the Docker host, and the container's port 80.
+
+- When a blind mount is used, the file  or directory is mounted from the host into container but when a volume is iused a new directory is created on the host's machine.
+
+
+### Writing a docker file 
+
+- ***FROM*** - Sets the base image and build on top 
+- ***WORKDIR*** - Sets the working directory inside the image 
+- ***COPY*** - Copies all the depedency files first and caches it.  So docker only runs npm install again if changes are made to the dependencies
+- ***RUN*** - Executes command when build time 
+- ***ENV*** - Sets an enviorment variable 
+- ***CMD*** - Default command when container starts
+
+
+
 
 
 
@@ -68,3 +91,5 @@
 - https://docs.docker.com/get-started/docker-concepts/building-images/understanding-image-layers/#image-layers
 - https://www.geeksforgeeks.org/devops/what-is-docker-registry/
 - https://www.geeksforgeeks.org/devops/what-is-docker-image-layer/
+- https://docs.docker.com/engine/storage/bind-mounts/
+- https://docs.docker.com/guides/databases/
