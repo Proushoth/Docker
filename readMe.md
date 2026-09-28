@@ -1,4 +1,4 @@
-## Core concept of docker
+## 1. Core concept of docker
 
 1. What is a container and how it is different from virtual machine?
 
@@ -35,7 +35,7 @@
 
 - Every time a new instruction is added to the image docker creates a new layer on top of the previous layer and stores them in a cache. Once these layers are created, they are cached and can be reused for future builds. So the order of instructions in a Dockerfile matters for build caching. This makes the build process much faster.
 
-## Docker CLI basics
+## 2. Docker CLI basics
 
 - ***Docker run*** - Pulls the image and that is needed to run the container
 - ***docker ps*** - Shows what are the running containers 
@@ -57,7 +57,7 @@
 - When a blind mount is used, the file  or directory is mounted from the host into container but when a volume is iused a new directory is created on the host's machine.
 
 
-## Writing a docker file 
+## 3. Writing a docker file 
 
 - ***FROM*** - Sets the base image and build on top 
 - ***WORKDIR*** - Sets the working directory inside the image 
@@ -90,6 +90,18 @@
 
 - ***docker compose down -v***  - remove containers + network + volumes
 
+- ***docker ps*** - is used to list all the currently running containers in the system
+
+- ***docker logs -f*** - command batch-retrieves logs present at the time of execution.
+
+- ***docker exec*** - allows to run a new process or commands inside an already runnimg docker container 
+
+
+ Why is down -v dangerous - Once the data is deleteed it cannot be Undone and it doesnt show any alert or notification saying it cannot be undone 
+ 
+ ## 5. Our projects
+
+
 
 
 
@@ -120,4 +132,5 @@
 - https://docs.docker.com/compose/
 - https://docs.docker.com/reference/compose-file/services/#depends_on
 - https://docs.docker.com/compose/how-tos/startup-order/
-- 
+- https://docs.docker.com/reference/cli/docker/compose/down/
+- https://docs.docker.com/reference/cli/docker/container/logs/
