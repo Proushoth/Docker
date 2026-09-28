@@ -66,6 +66,16 @@
 - ***ENV*** - Sets an enviorment variable 
 - ***CMD*** - Default command when container starts
 
+### CMD vs Entrypoint
+
+- CMD instructions specifies the default comman to run when a container is started from the docker image.
+- Entypoint sets a default executable to for the container
+- ENTRYPOINT can never be overridden, unlike CMD. The command in the CMD instruction is overridden when you add another command when running the docker container from the CLI. 
+
+## 4. Docker compose 
+
+
+
 
 
 
@@ -93,3 +103,6 @@
 - https://www.geeksforgeeks.org/devops/what-is-docker-image-layer/
 - https://docs.docker.com/engine/storage/bind-mounts/
 - https://docs.docker.com/guides/databases/
+- https://docs.docker.com/get-started/tutorials/run-an-app/
+- https://www.geeksforgeeks.org/devops/what-is-entrypoint-in-dockerfile/
+- https://www.docker.com/blog/docker-best-practices-choosing-between-run-cmd-and-entrypoint/
